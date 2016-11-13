@@ -1,0 +1,21 @@
++0000708
+
+24
+24
+30
+24
+18
+18
+Adresse
+
+128ster ASCII Wert
+128
+128
+Adresse
+
+65ster ASCII Wert -> A
+65
+65
+Adresse
+
+%%\12"3"\

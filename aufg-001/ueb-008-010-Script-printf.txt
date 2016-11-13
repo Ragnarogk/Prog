@@ -1,0 +1,13 @@
+Script p.44
+
+(8)
+	printf("printf(\"a = %%d\\n\",a);");
+
+(9)
+	'3' mit %c = 3 !
+	'3' mit %d = 51 !
+	3 mit %c = <Steuerzeichen EXT> !
+
+(10)
+	aum301beitsverzeichnis ist: "C:e3a
+	ecb"
