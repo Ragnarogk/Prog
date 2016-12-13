@@ -7,7 +7,7 @@
 int main()
 {
 	unsigned int input, temp = 0;
-	int rotations, inputSizeInBit;
+	int rotations, inputSizeInBit, debug;
 
 	printf("Bitte geben Sie eine unsigend Int-Variable in Hex-Darstellung ein: 0x");
 	scanf("%x%*c", &input);
@@ -20,9 +20,14 @@ int main()
 
 	printf("Input Hex: %08X\n", input);
 
-	temp = 0 ^ (input >> (inputSizeInBit - rotations));
-	input <<= rotations;
-	input = input | temp;
+	//debug = inputSizeInBit - rotations % inputSizeInBit;
+	//temp = input >> debug;
+	//temp = 0 ^ (input >> (inputSizeInBit - rotations % inputSizeInBit));
+	//input <<= rotations % inputSizeInBit;
+	//input = input | temp;
+
+	input = (input << rotations % inputSizeInBit | input >> inputSizeInBit - rotations % inputSizeInBit)
+			& 1 << rotations % inputSizeInBit - 1;
 
 	printf("Output Hex: %08X\n", input);
 

@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1EBB4490-3AF3-4841-AC10-47452D1DD6DF}</ProjectGuid>
+    <ProjectGuid>{7EA3F0FA-8DFA-490A-847B-A79389E90156}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Script_Uebung_23</RootNamespace>
+    <RootNamespace>Script_Uebung_29</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,7 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Script_Uebung_23.c" />
+    <ClCompile Include="Script_Uebung_29.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1EBB4490-3AF3-4841-AC10-47452D1DD6DF}</ProjectGuid>
+    <ProjectGuid>{70D1594F-7917-401B-912B-2D31481A5AE4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Script_Uebung_23</RootNamespace>
+    <RootNamespace>shiften_Test</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -145,7 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Script_Uebung_23.c" />
+    <ClCompile Include="shiften_Test.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

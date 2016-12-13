@@ -18,7 +18,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Script_Uebung_23.c">
+    <ClCompile Include="Script_Uebung_22.c">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
