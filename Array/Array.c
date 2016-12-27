@@ -7,12 +7,7 @@
 
 int main()
 {
-	int test[N] = {2,7,-1,0,5,-8,12}, i, smallest = 0, biggest = 0, sum = 0;
-//	int input;
-/*
-	for (i = 0; i < 4; i++) {
-		test[i] = i;
-	}*/
+	int test[N] = {2,7,-1,0,5,-8,12}, i, smallest = test[0], biggest = test[0], sum = 0;
 
 	for (i = 0; i < N; i++) {
 		if (test[i] < smallest) {
@@ -24,6 +19,7 @@ int main()
 		sum += test[i];
 	}
 
+	printf("Summe: %d\n", sum);
 	printf("Mittelwert: %.2lf\n", (float)sum / N);
 	printf("Kleinster Wert: %d\n", smallest);
 	printf("Groesster Wert: %d\n", biggest);
