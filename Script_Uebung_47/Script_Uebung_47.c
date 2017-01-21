@@ -9,7 +9,7 @@ int main()
 	int input[ARRAYLENGTH], i, sum = 0, count = 0, numberLength, maxNumberLength = 0, numberDivide;
 	float middle;
 
-	printf("Bitte 10 int-Feldwerte eingeben:\n");
+	printf("Bitte %d int-Feldwerte eingeben:\n", ARRAYLENGTH);
 	for (i = 0; i < ARRAYLENGTH; i++) {
 		printf("A[%d] = ", i);
 		scanf("%d%*c", &input[i]);
@@ -26,6 +26,8 @@ int main()
 		}
 	}
 
+	//add 1 to maxNumberLength for space between values
+	maxNumberLength++;
 	printf("maximale laenge: %d\n", maxNumberLength);
 
 	middle = (float)sum / ARRAYLENGTH;
@@ -47,7 +49,7 @@ int main()
 	printf("\n");
 	printf("\n");
 
-	printf("%d von den %d Werten sind kleiner als der Mittlerwert %.1lf\n", count, ARRAYLENGTH, middle);
+	printf("%d von den %d Werten sind kleiner als der Mittlerwert %.2lf\n", count, ARRAYLENGTH, middle);
 	printf("\n");
 
     return 0;

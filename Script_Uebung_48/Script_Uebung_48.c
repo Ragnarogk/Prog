@@ -10,7 +10,7 @@
 
 int main()
 {
-	double value[ARRAYLENGTH], lowerLimit, upperLimit, middle = 0, varianz = 0, deviation, min, max;
+	double value[ARRAYLENGTH], lowerLimit, upperLimit, middle = 0, variance = 0, deviation, min, max;
 	int i, minIndex, maxIndex;
 
 	srand((unsigned)time(NULL) * 1E6);
@@ -31,34 +31,34 @@ int main()
 	maxIndex = 0;
 
 	printf("Die %d Feldwerte sind:\n", ARRAYLENGTH);
-	for (i = 1; i <= ARRAYLENGTH; i++) {
-		printf("%8.2lf", value[i-1]);
+	for (i = 0; i < ARRAYLENGTH; i++) {
+		printf("%8.2lf", value[i]);
 
-		middle += value[i - 1];
+		middle += value[i];
 
 		//min und max prüfen und bei Bedarf neu setzen
 		//index mit merken
-		if (value[i - 1] < min) {
-			min = value[i - 1];
-			minIndex = i - 1;
+		if (value[i] < min) {
+			min = value[i];
+			minIndex = i;
 		}
-		else if (value[i -1] > max) {
-			max = value[i - 1];
-			maxIndex = i - 1;
+		else if (value[i] > max) {
+			max = value[i];
+			maxIndex = i;
 		}
 
 		//alle 10 Ausgaben einen Zeilenumbruch erzeugen
-		if (!(i%10)) {
+		if (!((i+1)%10)) {
 			printf("\n");
 		}
 	}
 
 	middle /= ARRAYLENGTH;
 
-	for (i = 1; i <= ARRAYLENGTH; i++) {
-		varianz += (pow(value[i - 1] - middle, 2));
+	for (i = 0; i < ARRAYLENGTH; i++) {
+		variance += (pow(value[i] - middle, 2));
 	}
-	deviation = sqrt(varianz / ARRAYLENGTH);
+	deviation = sqrt(variance / ARRAYLENGTH);
 
 	printf("Mittelwert der %d Feldwerte = %.2lf\n", ARRAYLENGTH, middle);
 	printf("Standardabweichung          = %.2lf\n", deviation);
